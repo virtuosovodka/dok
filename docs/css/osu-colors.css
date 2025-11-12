@@ -1,0 +1,176 @@
+/* Oregon State University Branding */
+/* Beaver Orange: #D73F09 | Official Fonts: Stratum 2 (headlines), Georgia (subheads), Kievit/Open Sans (body) */
+/* Dark Background: #212529 | Off-white Background: #f7f5f5 */
+
+:root {
+  --md-primary-fg-color: #D73F09;
+  --md-primary-fg-color--light: #E85C2F;
+  --md-primary-fg-color--dark: #B83109;
+  --md-accent-fg-color: #D73F09;
+}
+
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color: #D73F09;
+  --md-accent-fg-color: #D73F09;
+  --md-default-bg-color: #e8e6e6;
+  --md-code-bg-color: #FFFFFF;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #E85C2F;
+  --md-accent-fg-color: #E85C2F;
+  --md-default-bg-color: #212529;
+  --md-code-bg-color: #1a1a1a;
+}
+
+/* Typography - OSU Official Fonts */
+body {
+  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+/* Large Headlines - Stratum 2 (fallback to Open Sans) */
+h1 {
+  font-family: 'Stratum2', 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  color: #FFFFFF;
+}
+
+/* Dark mode headline */
+[data-md-color-scheme="slate"] h1 {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] h1 {
+  color: #000000;
+}
+
+/* Subheads - Georgia */
+h2, h3 {
+  font-family: Georgia, serif;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+/* Dark mode subheads */
+[data-md-color-scheme="slate"] h2,
+[data-md-color-scheme="slate"] h3 {
+  color: #E85C2F;
+}
+
+[data-md-color-scheme="default"] h2,
+[data-md-color-scheme="default"] h3 {
+  color: #D73F09;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+/* Dark mode small headings */
+[data-md-color-scheme="slate"] h4,
+[data-md-color-scheme="slate"] h5,
+[data-md-color-scheme="slate"] h6 {
+  color: #E85C2F;
+}
+
+[data-md-color-scheme="default"] h4,
+[data-md-color-scheme="default"] h5,
+[data-md-color-scheme="default"] h6 {
+  color: #D73F09;
+}
+
+/* Body copy - Open Sans (already set in mkdocs.yml) */
+p, li, td, th {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+}
+
+/* Dark mode body text */
+[data-md-color-scheme="slate"] p,
+[data-md-color-scheme="slate"] li,
+[data-md-color-scheme="slate"] td,
+[data-md-color-scheme="slate"] th {
+  color: #FFFFFF;
+}
+
+[data-md-color-scheme="default"] p,
+[data-md-color-scheme="default"] li,
+[data-md-color-scheme="default"] td,
+[data-md-color-scheme="default"] th {
+  color: #000000;
+}
+
+/* Code - Roboto Mono (already set in mkdocs.yml) */
+code {
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Dark mode code */
+[data-md-color-scheme="slate"] code {
+  color: #E85C2F;
+  background-color: rgba(215, 63, 9, 0.15);
+}
+
+[data-md-color-scheme="default"] code {
+  color: #D73F09;
+  background-color: rgba(215, 63, 9, 0.08);
+}
+
+/* OSU Background Colors */
+[data-md-color-scheme="default"] {
+  background-color: #e8e6e6 !important;
+}
+
+[data-md-color-scheme="slate"] {
+  background-color: #212529 !important;
+}
+
+.md-main {
+  background-color: transparent;
+}
+
+[data-md-color-scheme="default"] .md-main {
+  background-color: #e8e6e6 !important;
+}
+
+[data-md-color-scheme="slate"] .md-main {
+  background-color: #212529 !important;
+}
+
+[data-md-color-scheme="default"] .md-content {
+  background-color: #e8e6e6 !important;
+}
+
+[data-md-color-scheme="slate"] .md-content {
+  background-color: #212529 !important;
+}
+
+/* Move OSU logo to bottom right corner */
+.md-logo {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  top: auto !important;
+  left: auto !important;
+  z-index: 1000;
+}
+
+.md-logo img {
+  height: 60px !important;
+  width: auto !important;
+}
