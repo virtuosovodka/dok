@@ -1,0 +1,45 @@
+site_name: Documentation
+site_description: Personal documentation site
+site_url: https://virtuosovodka.github.io/dok/
+repo_url: https://github.com/virtuosovodka/dok
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+    - scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Home: index.md
+  - Python:
+    - Package Managers: python/package-managers.md
+  - Cloud Platforms: cloud/index.md
+
+plugins:
+  - search
+  - social
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - tables
+  - admonition
+  - pymdownx.details
